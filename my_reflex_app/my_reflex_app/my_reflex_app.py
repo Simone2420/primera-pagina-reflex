@@ -17,6 +17,7 @@ def index() -> rx.Component:
         rx.color_mode.button(position="top-right"),
         rx.vstack(
             rx.heading("Hello Blass", size="9"),
+            rx.heading("Welcome to Reflex!", size="5"),
             rx.text(
                 "Hello world! This is your first Reflex app.",
                 rx.code(f"{config.app_name}/{config.app_name}.py"),
@@ -30,8 +31,7 @@ def index() -> rx.Component:
             spacing="5",
             justify="center",
             min_height="85vh",
-        ),
-        rx.logo(),
+        )
     )
 
 
